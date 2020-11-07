@@ -1,0 +1,23 @@
+url deep linking
+open app via link
+copy meeting link / share on cell .
+join meeting.
+
+requirements-
+gmail id for creating app on firebase.
+android developer account details
+apple developer account details
+
+ui changes-- share, join meeting.
+deep linking-- redux store - logged in.
+rename package name.
+
+
+status --
+1. share button added.
+2. join meeting button-- working. 
+   for this i have created meeting from other acccount and paste that meeting url in join 
+   meeting pop up, - able to join meeting.
+3. our app is now opening if i click meeting url in mobile whatsapp-- 
+    it will not redirect to browser.
+    

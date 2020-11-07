@@ -6,7 +6,8 @@ var config = {
 
     hosts: {
         // XMPP domain.
-        domain: 'jitsi-meet.example.com',
+        // domain: 'jitsi-meet.example.com',
+        domain: 'meeting.kodulive.com',
 
         // When using authentication, domain for guest users.
         // anonymousdomain: 'guest.example.com',

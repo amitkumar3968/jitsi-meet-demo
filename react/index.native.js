@@ -69,13 +69,17 @@ class Root extends PureComponent<Props> {
         //     timestamp:Date.now(),
         //     flags:{"pip.enabled":true,"call-integration.enabled":false,"server-url-change.enabled":true,"resolution":360,"welcomepage.enabled":true},
         //   }
+       // console.log(this.props);
 
          return (
             <App
                  {...this.props}
                //room={'amittesting123'}
                 // url={ 'https://meeting.kodulive.com/f50f4f37-45aa-42f1-aa0a-9d464e0988c8?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Im5hbWUiOiJyYXZpbmRlci5wb29uaWFAbXVsdGl0dnNvbHV0aW9uLmNvbSIsImVtYWlsIjoicmF2aW5kZXIucG9vbmlhQG11bHRpdHZzb2x1dGlvbi5jb20ifSwicm9vbSI6ImY1MGY0ZjM3LTQ1YWEtNDJmMS1hYTBhLTlkNDY0ZTA5ODhjOCIsImlhdCI6MTU5OTYzMzAyNywiYXVkIjoiODhGMkExNjU2OTUwQiIsImlzcyI6Ijg4RjJBMTY1Njk1MEIiLCJzdWIiOiJtZWV0aW5nLmtvZHVsaXZlLmNvbSJ9.kOy1_BdoG8jjIPPAog18MyBaYh-flDn92xIcVSBhk4A#config.subject="talk-with-neil"&config.lobbyEnabled=true'}
-            url = {this.props.route.params.url}
+            
+                // url = {this.props.route.params.url}
+                url = {this.props.route? this.props.route.params.url:this.props.url.url}
+
                 timestamp={Date.now()}
                  flags={flagsPropData}
                //  externalAPIScope={'5d8d27d2-ecd0-4eec-8d95-74d48841bc45'}
@@ -112,7 +116,18 @@ if (!__DEV__) {
 // AppRegistry.registerComponent('App', () => Root);
 
 const Stack = createStackNavigator();
-function NavStack (){
+function NavStack (props){
+    
+    if(props.url.url){
+        //console.log(props.url.url);
+        const meetingUrlFromLaunch = props.url.url.toString();
+        if(meetingUrlFromLaunch.includes('meeting.kodulive.com')){
+          //  console.log('----------------------');
+            return <Root {...props}> </Root>;
+        }
+    }else{
+
+    
 return(
     <NavigationContainer>
         <Stack.Navigator initialRouteName="Home" screenOptions={{
@@ -129,6 +144,7 @@ return(
 
       </NavigationContainer>
 );
+}
 }
 
  

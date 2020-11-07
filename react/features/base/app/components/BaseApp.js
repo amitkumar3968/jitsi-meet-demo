@@ -232,7 +232,9 @@ export default class BaseApp extends Component<*, State> {
             return Promise.resolve();
         }
         console.log(route.component.displayName);
-        if(route.component.displayName === 'Connect(C)'){ //BlankPage
+        console.log(route.component.type);
+        if(route.component.displayName === 'Connect(BlankPage)'){ //BlankPage
+        // if(route.component.type == BlankPage.type){ //BlankPage
             const popAction = StackActions.pop(1);
            
                    this.props.navigation.dispatch(popAction);
