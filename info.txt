@@ -20,4 +20,9 @@ status --
    meeting pop up, - able to join meeting.
 3. our app is now opening if i click meeting url in mobile whatsapp-- 
     it will not redirect to browser.
-    
+
+Currently working on saving local session, so that avoid login at every app launch.
+Sign in with google - integration.
+
+ Please updated apk at -
+ https://we.tl/t-zVXDkA1lg2   

@@ -1,0 +1,261 @@
+1. User: sign up user
+ENDPOINT - https://kodulive.com/api/auth/signup
+TYPE - POST
+@params email // user email
+@params password // user password
+REQUEST - {
+    "email": "random.user@gmail.com",
+    "password": "randompassword"
+};
+RESPONSE - { "authToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhbmRvbS51c2VyQGdtYWlsLmNvbSIsImlhdCI6MTYwMTA0NjU0NiwiZXhwIjoxNjAxMTMyOTQ2fQ.Lve0_KdB0Y8xY9sjrRtvm1f6-PiVauDGrLzPGlniQ0Q" };
+
+
+--------------------------------------------------------------------------------------------
+    2. User: sign in user
+ENDPOINT - https://kodulive.com/api/auth/signin
+TYPE - POST
+@params email // user email
+@params password // user password
+REQUEST - {
+    "email": "random.user@gmail.com",
+    "password": "randompassword"
+};
+RESPONSE - { "authToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhbmRvbS51c2VyQGdtYWlsLmNvbSIsImlhdCI6MTYwMTA0NjU0NiwiZXhwIjoxNjAxMTMyOTQ2fQ.Lve0_KdB0Y8xY9sjrRtvm1f6-PiVauDGrLzPGlniQ0Q" };
+
+
+
+---------------------------------------------------------------------------------------------
+    3. User: Get logged in user profile
+ENDPOINT - https://kodulive.com/api/user/profile
+TYPE - GET
+// no parameter required // header shiuld have token to get user profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJhbmRvbS51c2VyQGdtYWlsLmNvbSIsImlhdCI6MTYwMTA0Njc1MCwiZXhwIjoxNjAxMTMzMTUwfQ.tnCnt0slMV313LMs9pKlCo1efGB8_fY9PeA30Ji22ZY
+
+
+---------------------------------------------------------------------------------------------
+    4. User: Update user profile
+ENDPOINT - https://kodulive.com/api/user/profile
+TYPE - PUT
+@params email // user email
+@params password // user password
+REQUEST - {
+    "profile": {
+        "name": "random.user@gmail.com",
+        "email": "random.user@gmail.com",
+        "contact": "8296889539"
+    }
+};
+RESPONSE - {
+    "createdOn": "2020-09-25T15:09:06.000Z",
+    "lastModifiedOn": "2020-09-25T15:09:06.000Z",
+    "createdBy": null,
+    "lastModifiedBy": null,
+    "id": 107,
+    "name": "random.user@gmail.com",
+    "contact": "8296889539",
+    "address": null,
+    "photoUrl": null,
+    "subscription": {
+        "createdOn": "2020-09-25T15:09:06.000Z",
+        "lastModifiedOn": "2020-09-25T15:09:06.000Z",
+        "createdBy": null,
+        "lastModifiedBy": null,
+        "id": 186,
+        "subscriptionId": null,
+        "planType": "Basic",
+        "tenureType": null,
+        "startDate": null,
+        "nextBillingDate": null,
+        "state": null
+    },
+    "email": "random.user@gmail.com"
+}
+
+
+
+--------------------------------------------------------------------------------------------
+    // Meeting
+
+    5. Meeting: cancel meeting
+ENDPOINT - https://kodulive.com/api/user/cancel-meeting
+TYPE - POST
+@params email // user email
+@params password // user password
+REQUEST - {
+    "id": 132  // meeting id
+};
+RESPONSE - {
+    "createdOn": "2020-09-10T16:26:50.000Z",
+    "lastModifiedOn": "2020-09-10T16:26:50.000Z",
+    "createdBy": null,
+    "lastModifiedBy": null,
+    "id": 132,
+    "meetingCode": "86f84fc4-4cb0-469c-963b-1c58751da9f9",
+    "title": "Meeting with correct timezone",
+    "meetingDate": "2020-09-10T21:55:33.249Z",
+    "startTime": "1599755133317",
+    "endTime": "1599755133318",
+    "guestEmailsString": "vikaspawale.v@gmail.com,neil.t@ekodus.com",
+    "cancelled": true,
+    "organizer": {
+        "createdOn": "2020-09-06T06:49:08.000Z",
+        "lastModifiedOn": "2020-09-06T06:49:08.000Z",
+        "createdBy": null,
+        "lastModifiedBy": null,
+        "id": 80,
+        "email": "vikaspawale.v@gmail.com",
+        "password": "$2b$10$L5BFYIknZ5/poed7aobYu.t8e0y/lkz.i52QFOcZbH1pxJNtnE52K",
+        "isActive": true,
+        "isRegistered": false,
+        "strategy": 0,
+        "profile": null
+    }
+}
+
+
+
+--------------------------------------------------------------------------------------------
+
+    6. Meeting: start / create meeting
+ENDPOINT - https://kodulive.com/api/user/meeting
+TYPE - postMessage
+RESQUEST - {
+    "title": "Meeting Start",
+    "meetingDate": "2020-09-25T15:31:40.021Z",
+    "startTime": 1601047900083,
+    "endTime": 1601047900088,
+    "guests": [
+        "vikaspawale.v@gmail.com"
+    ]
+}
+RESPONSE -  // meeting object same as 5.
+
+    7. Meeting: update meeting title
+TYPE - PUT
+ENDPOINT - https://kodulive.com/api/user/meeting
+REQUEST - {
+    title: "Kodu Meeting 1",
+    id: 134
+}
+RESPONSE -  // meeting object same as 5.
+
+    8. Meeting: get meetings by user
+TYPE - GET
+ENDPOINT - https://kodulive.com/api/user/meetings?pageIndex=2&pageSize=10
+RESPONSE - {
+    "totalCount": 21,
+    "pageIndex": 2,
+    "pageSize": 10,
+    "data": [
+        {
+            "createdOn": "2020-09-08T14:16:22.000Z",
+            "lastModifiedOn": "2020-09-08T14:16:22.000Z",
+            "createdBy": null,
+            "lastModifiedBy": null,
+            "id": 96,
+            "meetingCode": "831679e9-38ec-424a-9ed8-0f44058e8de8",
+            "title": " Gmail",
+            "meetingDate": "2020-09-08T14:16:06.899Z",
+            "startTime": "1599574566923",
+            "endTime": "1599574566924",
+            "guestEmailsString": "",
+            "cancelled": false
+        }
+    ]
+}
+
+9. Meeting: join meeting
+TYPE - POST
+ENDPOINT - https://kodulive.com/api/user/join-meeting
+REQUEST - {
+    "meetingCode": "831679e9-38ec-424a-9ed8-0f44058e8de8"
+}
+
+// token is the requried response property
+RESPONSE - {
+    "createdOn": "2020-09-08T14:16:22.000Z",
+    "lastModifiedOn": "2020-09-08T14:16:22.000Z",
+    "createdBy": null,
+    "lastModifiedBy": null,
+    "id": 96,
+    "meetingCode": "831679e9-38ec-424a-9ed8-0f44058e8de8",
+    "title": " Gmail",
+    "meetingDate": "2020-09-08T14:16:06.899Z",
+    "startTime": "1599574566923",
+    "endTime": "1599574566924",
+    "guestEmailsString": "",
+    "cancelled": false,
+    "organizer": null,
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Im5hbWUiOiJWSUtBUyBQQVdBTEUiLCJlbWFpbCI6InZpa2FzcGF3YWxlLnZAZ21haWwuY29tIn0sInJvb20iOiI4MzE2NzllOS0zOGVjLTQyNGEtOWVkOC0wZjQ0MDU4ZThkZTgiLCJpYXQiOjE2MDEwNDg3MzQsImF1ZCI6Ijg4RjJBMTY1Njk1MEIiLCJpc3MiOiI4OEYyQTE2NTY5NTBCIiwic3ViIjoibWVldGluZy5rb2R1bGl2ZS5jb20ifQ.swQ9p6yQCcPVlBLHqHwzg63IZipTuUq3B3RoL1P2Mb0"
+}
+
+
+10. Home: guest query
+TYPE - POST
+ENDPOINT - https://kodulive.com/api/guest/query
+REQUEST - {
+    "guestQuery": {
+        "name": "VIKAS",
+        "email": "vikaspawale.v@gmail.com",
+        "message": "Query to kodulive"
+    }
+}
+RESPONSE - {
+    "message": "Query to kodulive",
+    "email": "vikaspawale.v@gmail.com",
+    "name": "VIKAS",
+    "id": 17
+}
+
+
+11. Mark user as registered / unregistered.
+    ENDPOINT - http://localhost:3500/api/user/meeting-mark-as-register
+TYPE - POST
+@params emails // Array<string> list of emails to mark as registered/unregistered
+@params markUserAsRegistered // boolean true: mark as registered , false: mark as unregistered
+REQUEST - {
+    "emails": ['localuser@kodu.live.com', 'vikaspawale.v@gmail.com', 'randomEmailWithoutAccount'],
+    "markUserAsRegistered": true
+}
+// key : email, value: status of mark as registered/unregistered
+// ture:  registered/unregistered successfully, false: registered/unregistered failed for particular email
+RESPONSE - {
+    'localuser@kodu.live.com': true,
+    'vikaspawale.v@gmail.com': true,
+    'randomEmailWithoutAccount': false
+}
+
+12. Get list of registered / unregistered users
+ENDPOINT - http://localhost:3500/api/user/meeting-register?isRegistered=false
+@params isRegistered // true: get registered user // false: get unregistered user
+RESPONSE - [
+    {
+        "id": 40,
+        "email": "vikas@gmail.com",
+        "isActive": true,
+        "isRegistered": false
+    },
+    {
+        "id": 42,
+        "email": "kodulive@gmail.com",
+        "isActive": true,
+        "isRegistered": false
+    },
+    {
+        "id": 43,
+        "email": "mark.bordoloi@ekodus.com",
+        "isActive": true,
+        "isRegistered": false
+    }
+]
+
+ENDPOINT - http://localhost:3500/api/user/meeting-register?isRegistered=true
+@params isRegistered // true: get registered user // false: get unregistered user
+RESPONSE - [
+    {
+        "id": 40,
+        "email": "vikaspawale.v@gmail.com",
+        "isActive": true,
+        "isRegistered": true
+    }
+]

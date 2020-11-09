@@ -1,0 +1,264 @@
+Task - jitsi app--
+1. Belive --new app name
+2. replace all icons .
+3. change configuration url in appdelegate to --
+
+https://conference.multitvsolution.com:442/
+
+red theme
+1 475 860 900
+
+
+ 
+
+  
+/home/amity/Documents/GitHub/jitsi/jitsi-meet/react/features/base/react/components/native/styles.js
+/home/amity/Documents/GitHub/jitsi/jitsi-meet/react/features/base/styles/components/styles/ColorPalette.js
+/home/amity/Documents/GitHub/jitsi/jitsi-meet/react/features/welcome/components/styles.js
+
+
+
+/home/amity/Documents/GitHub/jitsi/jitsi-meet/react/features/welcome/components/styles.js
+export const SWITCH_THUMB_COLOR = ColorPalette.white;
+
+
+/home/amity/Documents/GitHub/jitsi/jitsi-meet/interface_config.js
+/home/amity/Documents/GitHub/jitsi/jitsi-meet/react/features/base/participants/functions.js
+DEFAULT_REMOTE_DISPLAY_NAME 
+
+/home/amity/Documents/GitHub/jitsi/jitsi-meet/react/features/base/dialog/components/native/styles.js
+sheet: {
+        backgroundColor: ColorPalette.white
+    }
+
+/home/amity/Documents/GitHub/jitsi/jitsi-meet/react/features/welcome/components/WelcomePageSideBar.native.js
+comments sidebaritem.
+
+
+/home/amity/Documents/GitHub/jitsi/jitsi-meet/react/features/chat/components/native/styles.js
+ emptyComponentText: {
+        color: ColorPalette.white,
+        textAlign: 'center'
+    },
+
+
+
+/home/amity/Documents/GitHub/jitsi/jitsi-meet/lang/main.json
+/home/amity/Documents/GitHub/jitsi/jitsi-meet/lang/main-enGB.json
+laucnch screen logo center.
+
+
+core data
+appcentre
+performance 
+tuning
+storybook
+core animation
+offline storage
+ios
+cocoa
+objective c
+restful
+ api
+ jenkins
+ threading
+ shell scripting
+ swift
+-----------------------------------------------------
+ 20 Sept 2020--
+ tasks --
+
+ Login Page
+Registration Page
+Social Login 
+Create a meeting 
+Joing a meeting
+Meeting listing with same details as web
+Move user to call screen to make/join call
+Implement JWT token to start a call
+Send invite option via installed social/messanging apps
+
+
+ adb -> ../lib/android-sdk/platform-tools/adb
+
+ export PATH="$PATH:$HOME/Documents/flutter/bin"
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+ln -s /media/files/tb-prod/files files
+
+ln -s /media/files/tb-prod/files files
+
+/usr/lib/android-sdk/platform-tools$  -old
+
+ln -s $ANDROID_HOME/platform-tools/adb adb
+
+git pull remote remotename 
+
+$ keytool -genkeypair -v -keystore my-upload-key.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000
+
+keytool -genkeypair -v -keystore kodulive.keystore -alias my-key-kodulive -keyalg RSA -keysize 2048 -validity 10000
+
+kodu 
+111111
+
+$ sudo keytool -genkey -v -keystore my-upload-key.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000
+
+npm install --save react-navigation
+npm install --save react-native-reanimated 
+npm install --save react-native-gesture-handler 
+npm install --save react-native-screens 
+npm install --save react-native-safe-area-context
+npm install --save @react-native-community/masked-view
+
+6A2E200A-191E-4C66-9D79-A124BF40CC85
+
+713339-345367-511797-009273-685597-295724-624239-623854
+
+to do--
+growthmark register
+born online test
+this project
+bike /scooter service
+sbi a/c 
+bike hp removal.
+in laws
+naveen max docs .
+
+Issues --
+1. image url in user profile api - image not exist
+2. please tell api developer to change http status to 200 , in case of any error.
+3. APK - having multiple issues in creating apk, meanwhile please find attached screenshots.
+
+
+Pending -
+1. log out button action.
+22. get all meetings.
+
+
+ ./gradlew --no-daemon assembleDemoDebug
+  ./gradlew --no-daemon assembleRelease
+
+
+18 Oct 2020-
+
+Points -
+1. create meeting done - UI and API Calling.
+2. newly created meeting is coming in all meetings list.
+
+Questions-
+1. flow of joining meeting -- not clear. in web, on join meeting - new tab opens.
+    how to handle in mobile. 
+
+Screenshots attached.
+
+https://meeting.kodulive.com/f50f4f37-45aa-42f1-aa0a-9d464e0988c8?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Im5hbWUiOiJyYXZpbmRlci5wb29uaWFAbXVsdGl0dnNvbHV0aW9uLmNvbSIsImVtYWlsIjoicmF2aW5kZXIucG9vbmlhQG11bHRpdHZzb2x1dGlvbi5jb20ifSwicm9vbSI6ImY1MGY0ZjM3LTQ1YWEtNDJmMS1hYTBhLTlkNDY0ZTA5ODhjOCIsImlhdCI6MTU5OTYzMzAyNywiYXVkIjoiODhGMkExNjU2OTUwQiIsImlzcyI6Ijg4RjJBMTY1Njk1MEIiLCJzdWIiOiJtZWV0aW5nLmtvZHVsaXZlLmNvbSJ9.kOy1_BdoG8jjIPPAog18MyBaYh-flDn92xIcVSBhk4A#config.subject="talk-with-neil"&config.lobbyEnabled=true
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Im5hbWUiOiJyYXZpbmRlci5wb29uaWFAbXVsdGl0dnNvbHV0aW9uLmNvbSIsImVtYWlsIjoicmF2aW5kZXIucG9vbmlhQG11bHRpdHZzb2x1dGlvbi5jb20ifSwicm9vbSI6ImY1MGY0ZjM3LTQ1YWEtNDJmMS1hYTBhLTlkNDY0ZTA5ODhjOCIsImlhdCI6MTU5OTYzMzAyNywiYXVkIjoiODhGMkExNjU2OTUwQiIsImlzcyI6Ijg4RjJBMTY1Njk1MEIiLCJzdWIiOiJtZWV0aW5nLmtvZHVsaXZlLmNvbSJ9.kOy1_BdoG8jjIPPAog18MyBaYh-flDn92xIcVSBhk4A
+
+3B2FD1B537ED1368F354B94DC63E0444
+
+https://community.jitsi.org/t/android-app-keeps-you-have-been-disconnected/33815/2
+https://community.jitsi.org/t/youve-been-disconnected-message-on-android-app/19015
+
+ LOG  Running "App" with {"initialProps":{"externalAPIScope":"14bfd944-2cf0-476c-9388-9965898ffecf","flags":{"pip.enabled":true,"call-integration.enabled":false,"server-url-change.enabled":true,"resolution":360,"welcomepage.enabled":true},"timestamp":1603144001382,"url":{"url":"https://meet.jit.si/amittesting123","serverURL":"https://meet.jit.si","config":{}}},"rootTag":1}
+
+ 
+ LOG  {"externalAPIScope": "14bfd944-2cf0-476c-9388-9965898ffecf", "flags": {"call-integration.enabled": false, "pip.enabled": true, "resolution": 360, "server-url-change.enabled": true, "welcomepage.enabled": true}, "rootTag": 1, "timestamp": 1603144001382, "url": {"config": {}, "serverURL": "https://meet.jit.si", "url": "https://meet.jit.si/amittesting123"}}
+
+status -
+1. logout button functionality implemented.
+2. made changes for avoiding login error , need to test.
+3. working on jwt integration,
+
+will send apk , plz ping your email id for sending apk link.
+ 
+
+ Queries-
+ In JWT, 
+                "aud": "88F2A1656950B",
+                "iss": "88F2A1656950B",
+    are hard coded or need to change at runtime.
+     java.lang.IllegalArgumentException: Can not create TypeBindings for class java.lang.Object with 1 type parameter: class expects 0
+        at com.fasterxml.jackson.databind.f0.l.b(TypeBindings.java:4)
+        at com.fasterxml.jackson.databind.f0.l.e(TypeBindings.java:13)
+        at com.fasterxml.jackson.databind.f0.m.i(TypeFactory.java:13)
+        at com.fasterxml.jackson.databind.f0.m.f(TypeFactory.java:4)
+        at com.fasterxml.jackson.databind.f0.m.r(TypeFactory.java:6)
+        at com.fasterxml.jackson.databind.f0.m.h(TypeFactory.java:13)
+        at com.fasterxml.jackson.databind.f0.m.f(TypeFactory.java:2)
+        at com.fasterxml.jackson.databind.f0.m.r(TypeFactory.java:6)
+        at com.fasterxml.jackson.databind.f0.m.h(TypeFactory.java:15)
+        at com.fasterxml.jackson.databind.f0.m.f(TypeFactory.java:2)
+        at com.fasterxml.jackson.databind.f0.m.D(TypeFactory.java:1)
+        at com.fasterxml.jackson.databind.z.h.f(MapperConfig.java:1)
+        at com.fasterxml.jackson.databind.x.F(SerializerProvider.java:3)
+        at com.fasterxml.jackson.databind.x.B(SerializerProvider.java:3)
+        at com.fasterxml.jackson.databind.e0.j.h0(DefaultSerializerProvider.java:4)
+        at com.fasterxml.jackson.databind.r.c(ObjectMapper.java:5)
+        at com.fasterxml.jackson.databind.r.t(ObjectMapper.java:2)
+        at io.jsonwebtoken.n.k.q(DefaultJwtBuilder.java:1)
+        at io.jsonwebtoken.n.k.l(DefaultJwtBuilder.java:1)
+        at io.jsonwebtoken.n.k.h(DefaultJwtBuilder.java:25)
+        at com.zaguiini.RNPureJwt.RNPureJwtModule.sign(RNPureJwtModule.java:23)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.facebook.react.bridge.JavaMethodWrapper.invoke(JavaMethodWrapper.java:18)
+        at com.facebook.react.bridge.JavaModuleWrapper.invoke(JavaModuleWrapper.java:2)
+        at com.facebook.react.bridge.queue.NativeRunnable.run(Native Method)
+        at android.os.Handler.handleCallback(Handler.java:794)
+        at android.os.Handler.dispatchMessage(Handler.java:99)
+    	at com.facebook.react.bridge.queue.Messag
+
+        Hi Nikku , Ravinder
+        Status -
+        1. jwt is integrated.
+        2. able to join meeting with the test link, but having issue on new meeeting.
+        attached screenshot.
+        3. sent apk via we transfer.
+        need to connect with backend developer.
+
+C3A9DE14AE3332483279BDFB0311826E11C32F5076333
+
+88F2A1656950B3B2FD1B537ED1368F354B94DC63E0444
+
+2483279BDFB0311826E11C32F5076333
+
+
+
+
+JWT token -
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb29tIjoiYTU0Y2YyNzAtMjRjMS00MmJiLWE3ZTgtNTRlOTg3YjFmMThkIiwidXNlciI6eyJuYW1lIjoiWXRAZ21haWwuY29tIiwiZW1haWwiOiJZdEBnbWFpbC5jb20ifSwiaWF0IjoxNTk5NjMzMDI3LCJhdWQiOiI4OEYyQTE2NTY5NTBCIiwiaXNzIjoiODhGMkExNjU2OTUwQiIsInN1YiI6Im1lZXRpbmcua29kdWxpdmUuY29tIn0.XATZUKUZQqnF3Ybu4y-1wa5FmDknNhXb6dhRqkl_vps
+
+Secret -
+C3A9DE14AE3332483279BDFB0311826E11C32F5076333
+
+Payload--
+{
+  "room": "a54cf270-24c1-42bb-a7e8-54e987b1f18d",
+  "user": {
+    "name": "Yt@gmail.com",
+    "email": "Yt@gmail.com"
+  },
+  "iat": 1599633027,
+  "aud": "88F2A1656950B",
+  "iss": "88F2A1656950B",
+  "sub": "meeting.kodulive.com"
+}
+
+meeting url -
+https://meeting.kodulive.com/a54cf270-24c1-42bb-a7e8-54e987b1f18d?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb29tIjoiYTU0Y2YyNzAtMjRjMS00MmJiLWE3ZTgtNTRlOTg3YjFmMThkIiwidXNlciI6eyJuYW1lIjoiWXRAZ21haWwuY29tIiwiZW1haWwiOiJZdEBnbWFpbC5jb20ifSwiaWF0IjoxNTk5NjMzMDI3LCJhdWQiOiI4OEYyQTE2NTY5NTBCIiwiaXNzIjoiODhGMkExNjU2OTUwQiIsInN1YiI6Im1lZXRpbmcua29kdWxpdmUuY29tIn0.XATZUKUZQqnF3Ybu4y-1wa5FmDknNhXb6dhRqkl_vps#config.subject="Iopp"
+
+ patanjali
+ mosquito bat
+ mobile repair.
+
+ lic premium - 5100
+ milk - 2000
+ hp removal Documents upload.
+ cylinder - 1500
+ elect/water bill.
+ popu fees.3100
+
