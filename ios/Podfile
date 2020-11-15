@@ -49,6 +49,19 @@ target 'JitsiMeet' do
   pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+  pod 'RNCMaskedView', :podspec => '../node_modules/@react-native-masked-view/masked-view/RNCMaskedView.podspec'
+  pod 'RNDateTimePicker', :podspec => '../node_modules/@react-native-community/datetimepicker/RNDateTimePicker.podspec'
+  pod 'RNGestureHandler', :podspec => '../node_modules/react-native-gesture-handler/RNGestureHandler.podspec'
+  pod 'RNReanimated', :podspec => '../node_modules/react-native-reanimated/RNReanimated.podspec'
+  pod 'RNScreens', :podspec => '../node_modules/react-native-screens/RNScreens.podspec'
+  pod 'RNVectorIcons', :podspec => '../node_modules/react-native-vector-icons/RNVectorIcons.podspec'
+  pod 'react-native-safe-area-context', :podspec => '../node_modules/react-native-safe-area-context/react-native-safe-area-context.podspec'
+  pod 'react-native-simple-toast', :podspec => '../node_modules/react-native-simple-toast/react-native-simple-toast.podspec'
+  pod 'react-native-spinkit', :podspec => '../node_modules/react-native-spinkit/react-native-spinkit.podspec'
+
+  
+
+
 
   # React Native plugins
   #
@@ -67,6 +80,8 @@ target 'JitsiMeet' do
   pod 'RNWatch', :path => '../node_modules/react-native-watch-connectivity'
   pod 'RNDefaultPreference', :path => '../node_modules/react-native-default-preference'
   pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
+
+
 
   # Native pod dependencies
   #
