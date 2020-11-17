@@ -4,7 +4,7 @@
 <dict>
 	<key>com.apple.developer.associated-domains</key>
 	<array>
-		<string>meeting.kodulive.com</string>
+		<string>applinks:meeting.kodulive.com</string>
 	</array>
 	<key>com.apple.developer.siri</key>
 	<true/>
