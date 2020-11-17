@@ -371,9 +371,9 @@ PODS:
   - RNGoogleSignin (3.0.1):
     - GoogleSignIn (~> 5.0.0)
     - React
-  - RNReanimated (1.13.1):
-    - React
-  - RNScreens (2.14.0):
+  - RNReanimated (1.13.2):
+    - React-Core
+  - RNScreens (2.15.0):
     - React-Core
   - RNSound (0.11.0):
     - React
@@ -636,8 +636,8 @@ SPEC CHECKSUMS:
   RNDefaultPreference: 56a405ce61033ac77b95004dccd7ac54c2eb50d1
   RNGestureHandler: 7a5833d0f788dbd107fbb913e09aa0c1ff333c39
   RNGoogleSignin: 39336070b35fc4cea6a98cf111e00480317be0ae
-  RNReanimated: dd8c286ab5dd4ba36d3a7fef8bff7e08711b5476
-  RNScreens: 2e278a90eb15092ed261d4f2271e3fc9b60d08d4
+  RNReanimated: e03f7425cb7a38dcf1b644d680d1bfc91c3337ad
+  RNScreens: 2ad555d4d9fa10b91bb765ca07fe9b29d59573f0
   RNSound: c980916b596cc15c8dcd2f6ecd3b13c4881dbe20
   RNSVG: 069864be08c9fe065a2cf7e63656a34c78653c99
   RNVectorIcons: bc69e6a278b14842063605de32bec61f0b251a59
@@ -645,6 +645,6 @@ SPEC CHECKSUMS:
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   Yoga: 96b469c5e81ff51b917b92e8c3390642d4ded30c
 
-PODFILE CHECKSUM: 6e1d9702a27f61b2a7120ea1a9901d9b649978f5
+PODFILE CHECKSUM: c297adfbf879e0d8fb37b36911179695454de076
 
 COCOAPODS: 1.10.0

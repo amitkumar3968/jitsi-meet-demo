@@ -87,7 +87,7 @@ class LoginPage extends React.Component<Props, State> {
       spinnerColor={'#f4511e'}
       labelTextStyle={{
         color: "#adadad",
-        fontFamily: "Now-Bold",
+         
       }}
       logoTextStyle={{
         fontSize: 27,
@@ -96,7 +96,7 @@ class LoginPage extends React.Component<Props, State> {
       }}
       loginButtonTextStyle={{
         color: "white",
-        fontFamily: "Now-Bold",
+        
       
         
       }}

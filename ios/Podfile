@@ -59,10 +59,6 @@ target 'JitsiMeet' do
   pod 'react-native-simple-toast', :podspec => '../node_modules/react-native-simple-toast/react-native-simple-toast.podspec'
   pod 'react-native-spinkit', :podspec => '../node_modules/react-native-spinkit/react-native-spinkit.podspec'
 
-  
-
-
-
   # React Native plugins
   #
 
